@@ -1,0 +1,32 @@
+
+{% extends 'org_base.html' %}
+{% load staticfiles %}
+
+
+{% block page_title %}机构首页{% endblock %}
+{% block page_index  %}机构首页{% endblock %}
+
+{% block right_detail %}
+    <div class="right companycenter layout" >
+        <div class="head">
+            <h1>机构介绍</h1>
+        </div>
+        <div class="des">
+            <p>&nbsp; &nbsp;{{ course_org.desc }}</p>
+        </div>
+    </div>
+    <div class="right companycenter layout" >
+        <div class="head">
+            <h1>成功典例--金三胖</h1>
+        </div>
+        <div class="des">
+            <image  src="{% static 'images/sp1.jpg'%}" style=""></image>
+        </div>
+
+
+    </div>
+{% endblock %}
+
+
+
+
